@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/lightbox.css">
+
+    <!-- JS Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>JS Library</title>
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <!-- Desktop Version Menu -->
+        <nav class="menu">
+            <a class="desktopLogo" href="">ALESSA</p></a>
+            <ul class="menuList">
+                <li>Store</li>
+                <li>Log In</li>
+                <li>Shopping Cart</li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Version Menu -->
+        <nav class="mobileMenu">
+            <!-- Logo -->
+            <p class="logo">ALESSA</p>
+                <!-- Menu Button -->
+            <button class="menuBTN">
+                <div class="bar"></div>
+            </button>
+        </nav>
+    </header>
+
+        <!-- Mobile Menu List -->
+        <nav class="mobileMenuList">
+            <ul class="">
+                <li>Store</li>
+                <hr> 
+                <li>Log In</li>
+                <hr> 
+                <li>Shopping Cart</li>
+            </ul>
+        </nav>
+
+    <!-- Contents -->
+    <main id="main">
+        <section id="hero">
+            <!-- JS Library 1. Glide js -->
+             <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img src="assets/images/1.jpg" alt="Image 1"></li>
+                    <li class="glide__slide"><img src="assets/images/2.jpg" alt="Image 2"></li>
+                    <li class="glide__slide"><img src="assets/images/3.jpg" alt="Image 3"></li>
+                  </ul>
+                </div>
+            </div>
+        
+            <article class="heroArticle">
+                <h1 class="heroLogo">ALESSA</h1>
+                <p>At ALESSA, we create modern, sophisticated furniture crafted with
+                     high-quality materials and attention to detail, enhancing comfort
+                      and beauty in every space.</p>
+            </article>
+        </section>
+
+        <section id="mainContents">
+            <!-- JS Library 2. Granim.js -->
+            <canvas id="canvas-basic"></canvas>
+             <!-- JS Library 3. Lightbox -->
+            <div class="container">
+                <h1 class="gallaryTitle">Chairs</h1>
+                <div class="gallary">  
+                    <figure>
+                        <a href="assets/images/4.jpg" data-lightbox="models" data-title="Green Chair">
+                            <img class="gallaryImg" src="assets/images/4.jpg" alt="">
+                            <figcaption class="productTitle">Green Chair $5</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="assets/images/5.jpg" data-lightbox="models" data-title="Denim Chair">
+                            <img class="gallaryImg" src="assets/images/5.jpg" alt="">
+                            <figcaption class="productTitle">Denim Chair $2</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="assets/images/6.jpg" data-lightbox="models" data-title="Greeeeeen Chair">
+                            <img class="gallaryImg" src="assets/images/6.jpg" alt="">
+                            <figcaption class="productTitle">Greeeeeen Chair $3</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="assets/images/7.jpg" data-lightbox="models" data-title="Father's Chair">
+                            <img class="gallaryImg" src="assets/images/7.jpg" alt="">
+                            <figcaption class="productTitle">Father's Chair $7</figcaption>
+                        </a>
+                    </figure>  
+                </div>
+            </div>
+
+            <!-- JS Library 4. AOS -->
+            <article id="bed">
+                <h1 data-aos="fade-down"> BeD BeD BeD</h1>
+                <p data-aos="fade-down">Find and get your most comfortable sleeping buddy</p>
+                <figure data-aos="zoom-in-down">
+                    <img class="bedPhoto" src="assets/images/8.png" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </article>
+                
+            
+
+       
+            
+        
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footerNav">
+            <a class="heroLogo">ALESSA</a>
+            <a>Information</a>
+            <a href="">alessa_service@gmail.com</a> 
+        </nav>
+    </footer>
+    
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://cdn.jsdelivr.net/npm/granim/dist/granim.min.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <!-- AOS Library Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+</html>

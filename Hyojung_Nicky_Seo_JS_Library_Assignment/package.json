@@ -1,0 +1,19 @@
+{
+  "name": "inm420-week1",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "Nicky Seo",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "lightbox2": "^2.11.4",
+    "masonry-layout": "^4.2.2"
+  }
+}
